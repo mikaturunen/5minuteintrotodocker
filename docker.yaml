@@ -3,7 +3,7 @@ author:
   name: Mika Turunen
   twitter: mikaturunen
   url: http://github.com/mikaturunen
-output: docker.html
+output: index.html
 
 --
 

@@ -6,6 +6,7 @@ author:
   url: http://github.com/mikaturunen
 output: index.html
 
+
 ------------------------------------------------------------------------
 
 # Docker intro
@@ -39,7 +40,7 @@ Docker containers wrap up a piece of software in a complete filesystem that cont
 
 ### How does it work
 
-* Images are read-only tmeplates
+* Images are read-only templates
 * Docker uses union file system (UnionFS, other alternatives possible)
 * Union file systems allow files and directories of separate file systems, known as branches, to be transparently overlaid, forming a single coherent file system.
 

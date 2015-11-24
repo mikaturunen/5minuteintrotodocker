@@ -400,29 +400,55 @@ pre .chunk {
     <div class="progress-bar"></div>
   </div>
 
-  <div class="slide" id="slide-1">
+  <div class="slide ----------------------------------------------------------------------" id="slide-1">
     <section class="slide-content"><h1 id="docker-intro">Docker intro</h1>
 <h2 id="in-5mins">In &lt; 5mins</h2>
 </section>
   </div>
-  <div class="slide hidden" id="slide-2">
+  <div class="slide hidden ----------------------------------------------------------------------" id="slide-2">
+    <section class="slide-content"><h3 id="installation">Installation</h3>
+<p>Docker Engine is supported on Linux, Cloud, Windows, and OS X.</p>
+<ul>
+<li><a href="https://docs.docker.com/engine/installation/#installation">Install Docker Engine</a></li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden ----------------------------------------------------------------------" id="slide-3">
     <section class="slide-content"><h3 id="docker-101">Docker 101</h3>
 <p>Docker containers wrap up a piece of software in a complete filesystem that contains everything it needs to run: code, runtime, system tools, system libraries – anything you can install on a server. This guarantees that it will always run the same, regardless of the environment it is running in.</p>
 </section>
   </div>
-  <div class="slide hidden" id="slide-3">
+  <div class="slide hidden ----------------------------------------------------------------------" id="slide-4">
+    <section class="slide-content"><h3 id="docker-terminology">Docker terminology</h3>
+<ul>
+<li>Image</li>
+<li>Container</li>
+<li>Docker Hub / Registry</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden ----------------------------------------------------------------------" id="slide-5">
+    <section class="slide-content"><h3 id="how-does-it-work">How does it work</h3>
+<ul>
+<li>Images are read-only tmeplates</li>
+<li>Docker uses union file system (UnionFS, other alternatives possible)</li>
+<li>Union file systems allow files and directories of separate file systems, known as branches, to be transparently overlaid, forming a single coherent file system.</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden ----------------------------------------------------------------------" id="slide-6">
     <section class="slide-content"><h3 id="what-is-a-typical-vm">What is a typical VM</h3>
 <center>
 <img style="width: 500px; padding-top: 10px;" src="what-is-docker-diagram.png"></img>
 </center></section>
   </div>
-  <div class="slide hidden" id="slide-4">
+  <div class="slide hidden ----------------------------------------------------------------------" id="slide-7">
     <section class="slide-content"><h3 id="what-is-docker">What is Docker</h3>
 <center>
 <img style="width: 500px; padding-top: 10px;" src="what-is-vm-diagram.png"></img>
 </center></section>
   </div>
-  <div class="slide hidden" id="slide-5">
+  <div class="slide hidden ----------------------------------------------------------------------" id="slide-8">
     <section class="slide-content"><h3 id="what-else-">What else?</h3>
 <ul>
 <li>Scalability</li>
@@ -431,7 +457,7 @@ pre .chunk {
 </ul>
 </section>
   </div>
-  <div class="slide hidden" id="slide-6">
+  <div class="slide hidden ----------------------------------------------------------------------" id="slide-9">
     <section class="slide-content"><h3 id="examples-mariadb">Examples, MariaDb</h3>
 <ul>
 <li><a href="https://hub.docker.com/_/mariadb/">https://hub.docker.com/_/mariadb/</a></li>
@@ -441,7 +467,7 @@ pre .chunk {
 <pre><code class="lang-bash">$ docker run --name some-app --link some-mariadb:mysql -d application-that-uses-mysql</code></pre>
 </section>
   </div>
-  <div class="slide hidden" id="slide-7">
+  <div class="slide hidden ----------------------------------------------------------------------" id="slide-10">
     <section class="slide-content"><h3 id="examples-wordpress">Examples, WordPress</h3>
 <ul>
 <li><a href="https://hub.docker.com/_/wordpress/">https://hub.docker.com/_/wordpress/</a></li>
@@ -452,7 +478,7 @@ pre .chunk {
     -e WORDPRESS_DB_USER=... -e WORDPRESS_DB_PASSWORD=... -d wordpress</code></pre>
 </section>
   </div>
-  <div class="slide hidden" id="slide-8">
+  <div class="slide hidden ----------------------------------------------------------------------" id="slide-11">
     <section class="slide-content"><h3 id="examples-couchdb">Examples, Couchdb</h3>
 <ul>
 <li><a href="https://hub.docker.com/r/klaemo/couchdb/">https://hub.docker.com/r/klaemo/couchdb/</a></li>
@@ -462,7 +488,7 @@ sudo docker run -d -p 5984:5984 --name couchdb klaemo/couchdb
 curl http://localhost:5984</code></pre>
 </section>
   </div>
-  <div class="slide hidden" id="slide-9">
+  <div class="slide hidden" id="slide-12">
     <section class="slide-content"><div class="author">
   <h1 class="name">Mika Turunen</h1>
     <h3 class="twitter">
@@ -470,6 +496,9 @@ curl http://localhost:5984</code></pre>
     </h3>
     <h3 class="url">
       <a href="http://github.com/mikaturunen">http://github.com/mikaturunen</a>
+    </h3>
+    <h3 class="email">
+      <a href="mailto:mika.turunen@ymail.com">mika.turunen@ymail.com</a>
     </h3>
 </div>
 </section>

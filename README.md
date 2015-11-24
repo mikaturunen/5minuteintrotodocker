@@ -8,4 +8,8 @@ By no means is this a complete "learn how to Docker" type of presentation but a 
 
 It quickly mixes the bag up and makes you start using Docker asap, have fun guys :smile:
 
+
+
+
+
 [1]: http://mikaturunen.github.io/5minuteintrotodocker/
